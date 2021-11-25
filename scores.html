@@ -1,7 +1,13 @@
 <h1>Please enter your first and last name (English) as well as your section number and press the enter key to check your scores for the first MCME.</h1>
 <script>
+const label = document.createElement("label");
+label.setAttribute("for", "username");
+label.innerHTML = "Username: ";
+
+document.body.appendChild(label);
+
 const input = document.createElement("input");
 input.setAttribute("id", "username");
 input.setAttribute("type", "text");
-if input==hi {document.write("Score=1")}
-        </script>
+
+document.body.appendChild(input);
