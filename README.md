@@ -13,4 +13,5 @@
   <h3>Sign Up</h3>
   <a href="https://forms.office.com/r/AakGduQf4i" target="_blank">Click here to sign up</a>
   
-  <a href="score.html">Click here to view scores for the first MCME</a>
+  <a href="scores.html">
+  Click here to view scores for the first MCME</a>
