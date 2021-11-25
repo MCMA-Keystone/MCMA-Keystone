@@ -12,4 +12,5 @@
   <p>-Intermediate: December 9th ARE</p>
   <h3>Sign Up</h3>
   <a href="https://forms.office.com/r/AakGduQf4i" target="_blank">Click here to sign up</a>
+  
   <a href="MCMA-Keystone.github.io/MCMA-Keystone/score">Click here to view scores for the first MCME</a>
