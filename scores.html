@@ -1,11 +1,9 @@
-<h1>Please enter your first and last name (English) as well as your section number and press the enter key to check your scores for the first MCME.</h1>
-<script> 
-    
-<input type="text" placeholder="e.g. Kevin Shi 8Q" id="inputId">
-    <button type="button" onclick="document.getElementById("inputId").value;">Get Value</button> 
+<h1>Please enter your first and last name (English) as well as your section number and press the "Get Score" button to check your scores for the first MCME.</h1>
+ <input type="text" placeholder="e.g. Kevin Shi 8Q" id="inputId">
+    <button type="button" onclick="getInputValue();">Get Score</button>
+    <script>
       function getInputValue() {
-        var inputVal = inputId;
-        if (inputVal == "Kevin Shi 8Q") {
-          document.write("Competitor: Kevin Shi   MCME Score: 0")
-</script>
-          
+        // Selecting the input element and get its value 
+        let inputVal = document.getElementById("inputId").value;
+        // Displaying the value
+        if (inputVal == "Kevin Shi 8Q") {document.write("Score for MCME: 0")};
