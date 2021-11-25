@@ -11,13 +11,13 @@
       function getInputValue() {
         // Selecting the input element and get its value 
         let inputVal = document.getElementById("inputId").value;
-        const data = {"Kevin Shi 8Q": 18, "Tata Li 8Q": 7, "Ryan Yu 8M": 12, "Max Lan 8M":6, "James Zhan 8Q": 5, "Elon Musk 8X": 9};
+        const data = {"xiaowei.shi": 18, "ao.li": 7, "haoyang.yu": 12, "jinghan.lan":6, "jingshan.zhan": 5, "elon.musk": 9};
         
         //if (inputVal == "Kevin Shi 8Q") {alert("Your Score for the 1st MCME is 0");}
 
         for (let i in data) {
           if (inputVal == i){
-            alert("Your Score for the 1st 2021 MCME is "+data[i]);
+            alert("Your score for the 1st 2021 MCME is "+data[i]);
           }
         }
       }
