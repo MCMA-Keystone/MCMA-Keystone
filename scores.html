@@ -9,7 +9,10 @@
       function getInputValue() {
         // Selecting the input element and get its value 
         let inputVal = document.getElementById("inputId").value;
+        let data = {"Kevin Shi 8Q":18, "Tata Li 8Q":7, "Ryan Yu 8M":12, "Max Lan 8M":6, "James Zhan 8Q":5, "Elon Musk 8X":9}
         if (inputVal == "Kevin Shi 8Q") {alert("Your Score for the 1st MCME is 0");}
+        for (let i = 0; i < scores.length; i=i+1) {
+          if (inputVal in names) {alert("Your Score for the 1st 2021 MCME is "+str(data.inputVal))};}
       }
     </script>
   </body>
