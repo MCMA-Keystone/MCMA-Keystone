@@ -1,8 +1,8 @@
 <h3>This is the official website of the</h3><h1>Mani-Cretin Mathematics Association of Keystone (MCMA)</h1>
-<br/>
+<br>
 <h2>Introduction</h2>
     <p>The MCMA is an organization founded by Tata Li and directed by Kevin Shi. It is sponsored and supported by the Academy of Cretins, Cretin Organization, Mani Organization, and Mani University. MCMA hosts mathematics contests such as the Mani-Cretin Mathematics Examination (MCME) and the Mani-Cretin Invitational Mathematics Examination (MCIME).</p>
-    <br/>
+    <br>
 
 <h2>Events</h2>
   <p>-MCME Junior Set</p>
