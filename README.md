@@ -1,5 +1,3 @@
-
-<head><title>MCMA</title></head>
 <h3>This is the official website of the</h3><h1>Mani-Cretin Mathematics Association of Keystone (MCMA)</h1>
 <br>
 <h2>Introduction</h2>
