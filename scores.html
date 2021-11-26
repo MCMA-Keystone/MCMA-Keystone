@@ -1,30 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head><title>Scores</title></head>
-  <h2>Scores</h2>
-    <!-- <p>Please enter your first and last names (English) and your section number to find your MCME score.</p> -->
-    <p>Please enter your email first.last name to find out your score for the 1st MCME of 2021 at Keystone.
+
   <body>
-    
+
+    <h2>Scores</h2>
+    <!-- <p>Please enter your first and last names (English) and your section number to find your MCME score.</p> -->
+    <p>Please enter your email first.last name to find out your score for the 1st MCME of 2021 at Keystone.</p>
+
+    <span>
     <input type="text" placeholder="e.g. xiaowei.shi" id="inputId">
-    <p>@student.keystoneacademy.cn</p></span>
-    <button type="button" onclick="getInputValue();">Get Score</button>
+    <button type="button" onclick="uselessAlert();">Get Score: MCME </button>
+    <button type="button" onclick="getInputValueIn();">Intermediate</button>
+    <button type="button" onclick="getInputValueJr();">Junior</button>
     <script>
-      function getInputValue() {
+      function getInputValueIn() {
         // Selecting the input element and getting its value 
         let inputVal = document.getElementById("inputId").value;
-        const data = {"xiaowei.shi": 18, "ao.li": 7, "haoyang.yu": 12, "jinghan.lan":6, "jingshan.zhan": 5, "elon.musk": 9};
-        
-        //if (inputVal == "Kevin Shi 8Q") {alert("Your Score for the 1st MCME is 0");}
+        const interSet = {"xiaowei.shi": 17, "ao.li": 7, "malcolm.mckenzie": 12, "sirui.zhu":16, "san.zhang": 5, "elon.musk": 9};
 
-        for (let i in data) {
+        let hasResult = false;
+        for (let i in interSet) {
           if (inputVal == i){
-            alert("Your score for the 1st 2021 MCME is "+data[i]);
-          }
+            alert("Your score for the 1st 2021 MCME Intermediate Set is "+interSet[i]);
+            hasResult = true;
+          } 
+
         }
+        if (hasResult==false){
+          alert("Invalid Input");
+        }
+
       }
-        
-    </script>
-  <span>
+      function getInputValueJr() {
+        let inputVal = document.getElementById("inputId").value;
+        const juniorSet = {"bill.gates": 14, "yun.ma":3, "elon.musk":5, "xiaowei":18, "ao.li":12, "muyu.zhang":2}
+
+        let hasResult = false;
+        for (let k in juniorSet) {
+          if (inputVal == k){
+            alert("Your score for the 1st 2021 MCME Junior Set is "+juniorSet[k]);
+            hasResult = true;
+          } 
+        }
+        if (hasResult==false){
+          alert("Invalid Input");
+        }
+
+
+      }
+      function uselessAlert(){
+
+        alert("Please select problem set on the right side");
+    
+      }
+  </script>
   </body>
 </html>
