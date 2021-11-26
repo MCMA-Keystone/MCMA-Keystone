@@ -2,7 +2,7 @@
 <html>
   <head><title>Scores</title></head>
     <!-- <p>Please enter your first and last names (English) and your section number to find your MCME score.</p> -->
-    <p>Please enter the part before @ of your Keystone email address. E.g. ao.li</p>
+    <p>Please enter your email first.last name. E.g. ao.li</p>
   <body>
     <span>
     <input type="text" placeholder="e.g. xiaowei.shi" id="inputId">
@@ -10,7 +10,7 @@
     <button type="button" onclick="getInputValue();">Get Score</button>
     <script>
       function getInputValue() {
-        // Selecting the input element and get its value 
+        // Selecting the input element and getting its value 
         let inputVal = document.getElementById("inputId").value;
         const data = {"xiaowei.shi": 18, "ao.li": 7, "haoyang.yu": 12, "jinghan.lan":6, "jingshan.zhan": 5, "elon.musk": 9};
         
