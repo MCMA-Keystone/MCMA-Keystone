@@ -36,7 +36,8 @@
   <div class="container-lg px-3 my-5 markdown-body">
     <p><a href="mainpage.html" target="blank">Back to Home Page</a></p>
     <h2>Scores</h2>
-    <p>Please enter your Keystone email first.last name to find out your score for the 1st MCME (2021 December) at Keystone</p>
+    <p>Please enter your Keystone email first.last name to find out your score for the 1st MCME (2021 December) at Keystone.</p>
+    <p>Example: ao.li<p>
 
   <input type="text" placeholder="e.g. xiaowei.shi" id="inputId"><p></p>
       <button type="button" onclick="uselessAlert();">Get Score: MCME</button><p></p>
@@ -51,7 +52,7 @@
         let hasResult = false;
         for (let i in interSet) {
           if (inputVal == i){
-            alert("Your score for the 1st 2021 MCME Intermediate Set is "+interSet[i]+"/15);
+            alert("Your score for the 1st 2021 MCME Intermediate Set is "+interSet[i]+"/15");
             hasResult = true;
           }
         }
@@ -77,7 +78,6 @@
             } else {
               alert("Your score for the 1st 2021 MCME Junior Set is "+juniorSet[k]+"/20\n\nYou are awarded\nHonor Roll of Participation");
             }
-            alert("I am confused");
             hasResult = true;
           } 
         }
