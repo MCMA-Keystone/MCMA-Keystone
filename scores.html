@@ -52,29 +52,39 @@
         let hasResult = false;
         for (let i in interSet) {
           if (inputVal == i){
-            alert("Your score for the 1st 2021 MCME Intermediate Set is "+interSet[i]+"/15");
+            alert("Your score for the 1st 2021 MCME Intermediate Set is "+interSet[i]+"/15)
+            ;
             hasResult = true;
+            
           } 
 
         }
         if (hasResult==false){
-          alert("Invalid Input\nType your Keystone email first.last name\n e.g. xiaowei.shi");
+          alert("Invalid Input\n\nType your Keystone email first.last name\n e.g. xiaowei.shi");
         }
 
       }
       function getInputValueJr() {
         let inputVal = document.getElementById("inputId").value;
-        const juniorSet = {"bill.gates": 14, "yun.ma":3, "elon.musk":5, "xiaowei.shi":0, "ao.li":0, "muyu.zhang":2}
+        const juniorSet = {"bill.gates": 14, "yun.ma":3, "elon.musk":5, "xiaowei.shi":0, "ao.li":0, "muyu.zhang":2, "lanqi.shi": 4, "jiaqian.zhang": 8, "niu.niu": 1, "mingfei.zhou": 18, "keming.gong": 18}
 
         let hasResult = false;
         for (let k in juniorSet) {
           if (inputVal == k){
-            alert("Your score for the 1st 2021 MCME Junior Set is "+juniorSet[k]+"/20");
+            if (interSet[i] >= 20){
+              alert("Your score for the 1st 2021 MCME Junior Set is "+juniorSet[k]+"/20\n\nYou are awarded\nRoll of Supreme Distinction\nand\nMagical Mani");
+            } else if (interSet[i] >= 15){
+              alert("Your score for the 1st 2021 MCME Junior Set is "+juniorSet[k]+"/20\n\nYou are awarded\nRoll of Distinction");
+            } else if (interSet[i] >= 3){
+              alert("Your score for the 1st 2021 MCME Junior Set is "+juniorSet[k]+"/20\n\nYou are awarded\nRoll of Achievement");
+            } else {
+              alert("Your score for the 1st 2021 MCME Junior Set is "+juniorSet[k]+"/20\n\nYou are awarded\nHonor Roll of Participation");
+            }
             hasResult = true;
           } 
         }
         if (hasResult==false){
-          alert("Invalid Input\nType your Keystone email first.last name\n e.g. ao.li");
+          alert("Invalid Input\n\nType your Keystone email first.last name\n e.g. ao.li");
         }
 
 
@@ -97,11 +107,11 @@
       <li>MCIME Floor - Minimum 3/15 points (some people who didn't participate in the intermediate set will still be selected if the committee believes that they demonstrated exceptional mathematics abilities).</li>
     </ul>
     
-    <h4>Junior Set (2021 December) (Might change depending on the situation)</h4>
+    <h4>Junior Set (2021 December)</h4>
     <ul>
       <li>Roll of Supreme Distinction - 20/20 points</li>
-      <li>Roll of Distinction - Minimum 18/20 points</li>
-      <li>Roll of Achievement - Minimum 5/20 points</li>
+      <li>Roll of Distinction - Minimum 15/20 points</li>
+      <li>Roll of Achievement - Minimum 3/20 points</li>
       <li>Roll of Participation - Minimum 0/15 points</li>
       <li>Magical Mani - Highest Scorer</li>
     </ul>
