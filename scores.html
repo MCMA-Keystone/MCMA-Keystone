@@ -47,36 +47,44 @@
       function getInputValueIn() {
         // Selecting the input element and getting its value 
         let inputVal = document.getElementById("inputId").value;
-        const interSet = {"xiaowei.shi": 0, "ao.li": 0, "malcolm.mckenzie": 12, "sirui.zhu":16, "san.zhang": 5, "elon.musk": 9, "yikuan.long": 2, "mingfei.zhou": 4, "leshan.fang": 2, "yundi.jin": 0, "zhongzheng.liu": 3, "sirui.zhu": 5};
+        const interSet = {"xiaowei.shi": 0, "ao.li": 0, "malcolm.mckenzie": 12, "sirui.zhu":16, "san.zhang": 5, "elon.musk": 9, "sample.high": 15, "yikuan.long": 2, "mingfei.zhou": 4, "leshan.fang": 2, "yundi.jin": 0, "zhongzheng.liu": 3, "sirui.zhu": 5};
 
         let hasResult = false;
         for (let i in interSet) {
           if (inputVal == i){
+            if (inputVal[i] >= 15){
+              alert("___________\nYour score for the 1st 2021 MCME Intermediate Set is "+inputVal[i]+"/20\n\nYou are awarded\nRoll of Supreme Distinction\nand\nClever Cretin");
+            } else if (inputVal[i] >= 5){
+              alert("___________\nYour score for the 1st 2021 MCME Intermediate Set is "+inputVal[i]+"/20\n\nYou are awarded\nRoll of Distinction");
+            } else if (inputVal[i] >= 1){
+              alert("___________\nYour score for the 1st 2021 MCME Intermediate Set is "+inputVal[i]+"/20\n\nYou are awarded\nRoll of Achievement");
+            } else {
+              alert("___________\nYour score for the 1st 2021 MCME Intermediate Set is "+inputVal[i]+"/20\n\nYou are awarded\nHonor Roll of Participation");
+            }
             alert("Your score for the 1st 2021 MCME Intermediate Set is "+interSet[i]+"/15");
             hasResult = true;
           }
         }
         if (hasResult==false){
-         
           alert("Invalid Input\n\nType your Keystone email first.last name\n e.g. xiaowei.shi");
         }
 
       }
       function getInputValueJr() {
         let inputVal = document.getElementById("inputId").value;
-        const juniorSet = {"bill.gates": 14, "yun.ma":3, "elon.musk":5, "xiaowei.shi":0, "ao.li":0, "muyu.zhang":2, "lanqi.shi": 4, "jiaqian.zhang": 8, "niu.niu": 1, "mingfei.zhou": 18, "keming.gong": 18};
+        const juniorSet = {"bill.gates": 14, "yun.ma":3, "elon.musk":5, "xiaowei.shi":0, "ao.li":0, "muyu.zhang":2, "sample.high": 20, "lanqi.shi": 4, "jiaqian.zhang": 8, "niu.niu": 1, "mingfei.zhou": 18, "keming.gong": 18};
 
         let hasResult = false;
         for (let k in juniorSet) {
           if (inputVal == k){
             if (juniorSet[k] >= 20){
-              alert("Your score for the 1st 2021 MCME Junior Set is "+juniorSet[k]+"/20\n\nYou are awarded\nRoll of Supreme Distinction\nand\nMagical Mani");
+              alert("___________\nYour score for the 1st 2021 MCME Junior Set is "+juniorSet[k]+"/20\n\nYou are awarded\nRoll of Supreme Distinction\nand\nMagical Mani");
             } else if (juniorSet[k] >= 15){
-              alert("Your score for the 1st 2021 MCME Junior Set is "+juniorSet[k]+"/20\n\nYou are awarded\nRoll of Distinction");
+              alert("___________\nYour score for the 1st 2021 MCME Junior Set is "+juniorSet[k]+"/20\n\nYou are awarded\nRoll of Distinction");
             } else if (juniorSet[k] >= 3){
-              alert("Your score for the 1st 2021 MCME Junior Set is "+juniorSet[k]+"/20\n\nYou are awarded\nRoll of Achievement");
+              alert("___________\nYour score for the 1st 2021 MCME Junior Set is "+juniorSet[k]+"/20\n\nYou are awarded\nRoll of Achievement");
             } else {
-              alert("Your score for the 1st 2021 MCME Junior Set is "+juniorSet[k]+"/20\n\nYou are awarded\nHonor Roll of Participation");
+              alert("___________\nYour score for the 1st 2021 MCME Junior Set is "+juniorSet[k]+"/20\n\nYou are awarded\nHonor Roll of Participation");
             }
             hasResult = true;
           } 
