@@ -53,15 +53,14 @@
         for (let i in interSet) {
           if (inputVal == i){
             if (inputVal[i] >= 15){
-              alert("___________\nYour score for the 1st 2021 MCME Intermediate Set is "+inputVal[i]+"/20\n\nYou are awarded\nRoll of Supreme Distinction\nand\nClever Cretin");
-            } else if (inputVal[i] >= 5){
-              alert("___________\nYour score for the 1st 2021 MCME Intermediate Set is "+inputVal[i]+"/20\n\nYou are awarded\nRoll of Distinction");
-            } else if (inputVal[i] >= 1){
-              alert("___________\nYour score for the 1st 2021 MCME Intermediate Set is "+inputVal[i]+"/20\n\nYou are awarded\nRoll of Achievement");
+              alert("___________\nYour score for the 1st 2021 MCME Intermediate Set is "+interSet[i]+"/20\n\nYou are awarded\nRoll of Supreme Distinction\nand\nClever Cretin");
+            } else if (interSet[i] >= 5){
+              alert("___________\nYour score for the 1st 2021 MCME Intermediate Set is "+interSet[i]+"/20\n\nYou are awarded\nRoll of Distinction");
+            } else if (interSet[i] >= 1){
+              alert("___________\nYour score for the 1st 2021 MCME Intermediate Set is "+interSet[i]+"/20\n\nYou are awarded\nRoll of Achievement");
             } else {
-              alert("___________\nYour score for the 1st 2021 MCME Intermediate Set is "+inputVal[i]+"/20\n\nYou are awarded\nHonor Roll of Participation");
+              alert("___________\nYour score for the 1st 2021 MCME Intermediate Set is "+interSet[i]+"/20\n\nYou are awarded\nHonor Roll of Participation");
             }
-            alert("Your score for the 1st 2021 MCME Intermediate Set is "+interSet[i]+"/15");
             hasResult = true;
           }
         }
