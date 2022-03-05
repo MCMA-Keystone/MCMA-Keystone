@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Scores</title>
+<meta name="generator" content="Jekyll v3.9.0">
+<meta property="og:title" content="MCMA-Keystone">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Config files for my GitHub profile.">
+<meta property="og:description" content="Config files for my GitHub profile.">
+<link rel="canonical" href="https://mcma-keystone.github.io/MCMA-Keystone/">
+<meta property="og:url" content="https://mcma-keystone.github.io/MCMA-Keystone/">
+<meta property="og:site_name" content="MCMA-Keystone">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="MCMA-Keystone">
+<script type="application/ld+json">
+{"description":"Check your competition results here","url":"https://mcma-keystone.github.io/MCMA-Keystone/","@type":"WebSite","headline":"MCMA-Keystone","name":"MCMA-Keystone","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <style class="anchorjs"></style><link rel="stylesheet" href="/MCMA-Keystone/assets/css/style.css?v=9f29a72353e2d303ae15c52fac7c81bffaa62e09">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+
+<!-- You can set your favicon here -->
+<link rel="shortcut icon" type="image/x-icon" href="/MCMA-Keystone/favicon.png">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+  <div class="container-lg px-3 my-5 markdown-body">
+    <p><a href="mainpage.html" target="blank">Back to Home Page</a></p>
+    <h2>Scores - MCMTS (2022 Spring Season)</h2>
+    <p>Please enter your Keystone email first.last name to find out your score for the MCMTS 2022 Spring Season at Keystone.</p>
+
+  <input type="text" placeholder="e.g. ao.li" id="inputId"><p></p>
+  <button type="button" onclick="getInputValue();">&nbsp&nbsp&nbsp View Score &nbsp&nbsp&nbsp&nbsp </button><p></p>
+    <script>
+      function getInputValue() {
+        // Selecting the input element and getting its value 
+        let inputVal = document.getElementById("inputId").value;
+        const set = {"xiaowei.shi": 0, "ao.li": 0, "malcolm.mckenzie": 12, "bill.gates": 3, "elon.musk": 2, "albert.einstein": 20, "mathias.durango":2, "aijia.liu":8};
+
+        let hasResult = false;
+        for (let i in set) {
+          if (inputVal == i){
+            if (inputVal[i] >= 20){
+              alert("\nYour score for the Mani-Cretin Mathematics Talent Search (MCMTS) is "+set[i]+"/20\n\nYou are awarded\nRoll of Supreme Distinction\nand\n Talented Chef");
+            } else if (set[i] >= 15){
+              alert("\nYour score for the Mani-Cretin Mathematics Talent Search (MCMTS) is "+set[i]+"/20\n\nYou are awarded\nRoll of Distinction");
+            } else if (set[i] >= 10){
+              alert("\nYour score for the Mani-Cretin Mathematics Talent Search (MCMTS) is "+set[i]+"/20\n\nYou are awarded\nRoll of Merit");
+            } else if (set[i] >= 5){
+              alert("\nYour score for the Mani-Cretin Mathematics Talent Search (MCMTS) is "+set[i]+"/20\n\nYou are awarded\nRoll of Achievement");
+            } else {
+              alert("\nYour score for the Mani-Cretin Mathematics Talent Search (MCMTS) is "+set[i]+"/20\n\nYou are awarded\nHonor Roll of Participation");
+            }
+            hasResult = true;
+          }
+        }
+        if (hasResult==false){
+          alert("Invalid Input\n\nType your Keystone email first.last name\n e.g. xiaowei.shi");
+        }
+
+      }
+  </script>
+    <p></p>
+    <p></p>
+    <h3>Certificates</h3>
+    <h4>Intermediate Set (2021 December)</h4>
+    <ul>
+      <li>Roll of Supreme Distinction - 20/20 points</li>
+      <li>Roll of Distinction - Minimum 15/20 points</li>
+      <li>Roll of Merit - Minimum 10/20 points</li>
+      <li>Roll of Achievement - Minimum 5/20 points</li>
+      <li>Roll of Participation - Minimum 0/20 points</li>
+      <li>Talented Chef - Highest Scorer</li>
+    </ul>
+  </body>
+</html>
