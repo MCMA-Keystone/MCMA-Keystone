@@ -26,33 +26,23 @@
             background-image: url("math2.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-            color: white;
-        }
-        body {
-          position: relative;
-          padding: 20px;
+            background-attachment: fixed;
         }
         
-        body::before,
-        body::after {
+        .container-lg.px-3.my-5.markdown-body {
           content: "";
-          position: absolute;
+          position: relative;
           top: 0;
           left: 0;
           right: 0;
           bottom: 0;
-          opacity: 0.5;
+          opacity: 0.8;
           background-color: white;
           z-index: -1;
         }
         
-        body::before {
-          transform: translate(-10px, -10px);
-        }
         
-        body::after {
-          transform: translate(10px, 10px);
-        }
+    
     </style>
 
 <!-- Setup Google Analytics -->
