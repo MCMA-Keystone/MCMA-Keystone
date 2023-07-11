@@ -25,8 +25,15 @@
         background-image: url("math.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        text-color: white;
+        color: white;
+        input[type="text"] {
+          width: 100%;
+          border: none;
+          background: none;
+          color: magenta;
+        }
       }
+
     </style>
     <script>
       function search() {
@@ -34,7 +41,11 @@
         var input = document.getElementById("search-bar").value;
         
         // Get the HTML elements to search through
-        var elements = document.getElementsByTagName("p");
+        var pElements = document.getElementsByTagName("p");
+        var h2Elements = document.getElementsByTagName("h2");
+        
+        // Combine the p and h2 elements into a single array
+        var elements = Array.from(pElements).concat(Array.from(h2Elements));
         
         // Loop through the elements and hide/show them based on the search input
         for (var i = 0; i < elements.length; i++) {
@@ -75,10 +86,12 @@
           <p></p>
         <h5>Final note for readers: We welcome (and strongly encourage) questions and comments from both experts and the general public. We will carefully consider all suggestions and give detailed responses to all questions during the MCMA's conferences.</h3>
             
-        <p><br></p>
-        <input type="text" id="search-bar" onkeyup="search()" placeholder="Search...">
-        <p><br></p>
-        <p><br></p>
+        <br>
+        <br>
+        <br>
+        <input type="text" id="search-bar" onkeyup="search()" placeholder="Search this page...">
+        <br>
+        <br>
           
         <h2>(General Description) The PIMO</h2>
             <p>The Providential Intermediate Mathematics Olympiad (PIMO) is an educational mock olympiad of similar difficulty to the <a href="https://en.wikipedia.org/wiki/United_States_of_America_Mathematical_Olympiad">USAJMO</a>, though not selective in nature. Read more <a href="https://providentialscience.blogspot.com/2023/07/the-pimo-comprehensive-general.html">here</a></p>
